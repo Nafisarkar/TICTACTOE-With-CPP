@@ -14,6 +14,7 @@ int main(){
                            {' ','|',' ','|',' '},
                            {'-','+','-','+','-'},
                            {' ','|',' ','|',' '}};
+                           
     int position;
     char user;
     for(int run=0;run<10;run++){
