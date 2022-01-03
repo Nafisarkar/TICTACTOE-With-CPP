@@ -163,12 +163,19 @@ void winchk(char gb[5][5]){
     if(gb[0][0]==gb[0][2]&&gb[0][4]==gb[0][2]&&gb[0][0]!=' '){
         call_winner(gb[0][0]);
     }
-    else if(gb[2][0]==gb[2][2]==gb[2][4]&&gb[2][0]!=' '){
+    else if(gb[2][0]==gb[2][2]&&gb[2][2]==gb[2][4]&&gb[2][0]!=' '){
         call_winner(gb[2][0]);
     }
-    else if(gb[4][0]==gb[4][2]==gb[4][4]&&gb[4][0]!=' '){
+    else if(gb[4][0]==gb[4][2]&&gb[4][0]==gb[4][4]&&gb[4][0]!=' '){
         call_winner(gb[4][0]);
     }
+    else if(gb[0][0]==gb[2][2]&&gb[2][2]==gb[4][4]&&gb[0][0]!=' '){
+        call_winner(gb[0][0]);
+    }
+    else if(gb[0][4]==gb[2][2]&&gb[4][0]==gb[2][2]&&gb[2][2]!=' '){
+        call_winner(gb[2][2]);
+    }
+    
 }
 
 void call_winner(char c){
