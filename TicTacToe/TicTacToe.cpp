@@ -15,11 +15,9 @@ int main(){
                            {'-','+','-','+','-'},
                            {' ','|',' ','|',' '}};
                            
-    int position,count=0;
+    int position;
     char user;
-    int player_array[5];
     for(int run=0;run<9;run++){
-        
         system("cls");
         if(run%2==0){
             user = 'p';
@@ -34,15 +32,9 @@ int main(){
             print_Board(game_board);
             std::cout<<"POSITION (1-9)->";    
             std::cin>>position;
-            player_array[count]=position;
-            count++;
             std::cout<<"YOUR POSITION "<<position<<std::endl;
         }
         palaceBoard(game_board,position,user);
-    }
-    print_Board(game_board);
-    for(int j=0;j<5;j++){
-        std::cout<<player_array[j]<<std::endl;
     }
     return 0;
 }
