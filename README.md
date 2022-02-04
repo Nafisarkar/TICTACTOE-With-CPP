@@ -1,1 +1,1 @@
-# tic tac toe with c
+# Tic Tac Toe with c++
