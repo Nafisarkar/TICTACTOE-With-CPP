@@ -1,2 +1,1 @@
-# This is a Small project with cpp
-# Tictaktoe
+# tic tac toe with c
